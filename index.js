@@ -9,6 +9,6 @@ app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => res.render("home"));
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("Server running http://localhost:9090");
 });
