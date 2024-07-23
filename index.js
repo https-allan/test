@@ -7,10 +7,8 @@ const path = require("path");
 app.engine("handlebars", handlebars.engine());
 app.set("view engine", "handlebars");
 
-app.get("/", (req, res) => {
-  res.render("home");
-});
+app.get("/", (req, res) => res.render("home"));
 
-app.listen(9090, () => {
+app.listen(3000, () => {
   console.log("Server running http://localhost:9090");
 });
